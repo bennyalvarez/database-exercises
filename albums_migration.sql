@@ -7,7 +7,7 @@ CREATE TABLE albums (
     artist VARCHAR(50),
     name VARCHAR(100),
     release_date INT,
-    sales DOUBLE UNSIGNED NOT NULL,         --DECIMAL(15, 2), also would have been more precise since 10 digits in million.
+    sales DOUBLE UNSIGNED NOT NULL,         --DECIMAL(15, 2), also would have been more precise since 10 digits in million. use this for select exercises
     genre VARCHAR(50),
     PRIMARY KEY (id)
 
