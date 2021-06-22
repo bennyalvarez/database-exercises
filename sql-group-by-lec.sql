@@ -30,3 +30,14 @@ GROUP BY last_name, first_name;
 SELECT gender, COUNT(*) FROM employees
 WHERE first_name IN ('Irena', 'Vidya', 'Maya')
 GROUP BY gender;
+
+#ALIAS LECTURE
+
+SELECT MIN(DATEDIFF(hire_date, birth_date)/365) AS 'youngest age at hire'
+FROM employees;
+
+SELECT CONCAT(first_name, ' ', last_name) AS Name,
+       DATEDIFF(hire_date, birth_date)/365 AS 'Age when hired'
+FROM employees
+ORDER BY DATEDIFF(hire_date, birth_date)/365 DESC
+LIMIT 50;
