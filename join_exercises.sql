@@ -32,3 +32,4 @@ FROM dept_emp AS de
          JOIN departments AS d ON d.dept_no = de.dept_no
     AND dept_name = 'Customer Service'
 GROUP BY t.title;
+
